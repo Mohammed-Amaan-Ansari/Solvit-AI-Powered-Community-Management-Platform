@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solvit - Smart reporting, smarter cities</title>
+    <link rel="stylesheet" href="styles.css">
+   <link rel="shortcut icon" href="img/favicon.png">
+</head>
+ 
+<body>
+ 
+    <section id="landing-page" class="page active">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <div class="logo-icon"><img src="img/logo.png" ></div>
+                        <span class="logo-text">Solvit</span>
+                    </div>
+                    <nav>
+                        <a href="#" onclick="showPage('report-page')" class=" btn-primary">Report Issue</a>
+                        <a href="#" onclick="showPage('admin-login')" class="btn-primary">Admin Login</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Organize Community Problems with 
+                        <span class="gradient-text">AI Intelligence</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        An AI-powered platform that helps communities organize and understand local problems 
+                        by automatically categorizing user-reported issues.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#" onclick="showPage('report-page')" class="btn-primary btn-large">Report an Issue</a>
+                        <a href="#features" class="btn-secondary btn-large">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <!-- <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Issue Categories</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">AI</div>
+                        <div class="stat-label">Powered Categorization</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Community Impact</div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why <span style="font-family: 'Wide Latin';">Solvit</span>?</h2>
+                    <p>Transform scattered community complaints into organized, actionable data</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><img src="img/1.png"></div>
+                        <h3>AI-Powered Classification</h3>
+                        <p>Advanced AI automatically categorizes issues into Waste, Water, Road, Safety, Health, or Other</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><img src="img/2.png"> </div>
+                        <h3>Real-Time Analytics</h3>
+                        <p>View live statistics and visualizations to identify priority issues at a glance</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><img src="img/3.png"></div>
+                        <h3>Community Driven</h3>
+                        <p>Empower citizens to report local problems and make their voices heard</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><img src="img/4.png"></div>
+                        <h3>Simple Reporting</h3>
+                        <p>Just describe the problem in plain text - no complex forms or categories to choose</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><img src="img/5.png"></div>
+                        <h3>Admin Dashboard</h3>
+                        <p>Comprehensive analytics and management tools for community organizers</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><img src="img/6.png"></div>
+                        <h3>Track Trends</h3>
+                        <p>Identify patterns and recurring issues to prioritize community action</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Issue Categories</h2>
+                    <p>AI automatically classifies every report into one of these categories</p>
+                </div>
+
+                <div class="categories-grid">
+                    <div class="category-card category-waste">
+                        <div class="category-emoji">🗑️</div>
+                        <div class="category-name">Waste</div>
+                    </div>
+                    <div class="category-card category-water">
+                        <div class="category-emoji">💧</div>
+                        <div class="category-name">Water</div>
+                    </div>
+                    <div class="category-card category-road">
+                        <div class="category-emoji">🛣️</div>
+                        <div class="category-name">Road</div>
+                    </div>
+                    <div class="category-card category-safety">
+                        <div class="category-emoji">🚨</div>
+                        <div class="category-name">Safety</div>
+                    </div>
+                    <div class="category-card category-health">
+                        <div class="category-emoji">🏥</div>
+                        <div class="category-name">Health</div>
+                    </div>
+                    <div class="category-card category-other">
+                        <div class="category-emoji">📋</div>
+                        <div class="category-name">Other</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Solvit  All Rights Reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Report Page Section -->
+    <section id="report-page" class="page">
+        <header class="header">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo" onclick="showPage('landing-page')" style="cursor: pointer;">
+                        <div class="logo-icon"><img src="img/logo.png" ></div>
+                        <span class="logo-text">Solvit</span>
+                    </div>
+                    <a href="#" onclick="showPage('landing-page')" class="nav-link">← Back to Home</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="container report-container">
+            <div class="report-grid">
+                <!-- Report Form -->
+                <div class="report-form-section">
+                    <div class="card">
+                        <h1>Report an Issue</h1>
+                        <p class="subtitle">Describe the problem in your own words. Our AI will automatically categorize it.</p>
+
+                        <form id="report-form">
+                            <div class="form-group">
+                                <label for="city">City </label>
+                                <input type="text" id="city" placeholder="e.g., Mumbai, Delhi, Bangalore">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="problem">Describe the Problem <span class="required">*</span></label>
+                                <textarea id="problem" rows="6" placeholder="e.g., There's a large pothole on Main Street causing traffic issues..."></textarea>
+                            </div>
+
+                            <div id="error-message" class="alert alert-error" style="display: none;"></div>
+                            <div id="success-message" class="alert alert-success" style="display: none;"></div>
+                            <div id="loading-message" class="alert alert-info" style="display: none;">
+                                <span class="spinner"></span> AI is analyzing your report...
+                            </div>
+
+                            <button type="submit" class="btn-primary btn-large btn-full" id="submit-btn">
+                                📤 Submit Report
+                            </button>
+                        </form>
+
+                        <div class="info-box">
+                            <h3>💡 Examples:</h3>
+                            <ul>
+                                <li>"Garbage not collected for 3 days on Park Street"</li>
+                                <li>"Water leakage from main pipeline near school"</li>
+                                <li>"Large pothole causing accidents on Highway 24"</li>
+                                <li>"Poor street lighting making area unsafe at night"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statistics Section -->
+                <div class="statistics-section">
+                    <div class="card">
+                        <h2>📊 Live Statistics</h2>
+                        
+                        <div class="total-reports">
+                            <div class="total-number" id="total-reports">0</div>
+                            <div class="total-label">Total Reports Submitted</div>
+                        </div>
+
+                        <div class="category-counts" id="category-counts">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+
+                        <div class="chart-container">
+                            <h3>Category Distribution</h3>
+                            <canvas id="category-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- <div class="card info-card">
+                        <h3>How It Works</h3>
+                        <div class="steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <div class="step-title">Describe the Problem</div>
+                                    <div class="step-text">Simply type what's wrong in plain text</div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <div class="step-title">AI Categorizes It</div>
+                                    <div class="step-text">Our AI automatically identifies the category</div>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <div class="step-title">Track Progress</div>
+                                    <div class="step-text">View statistics and help prioritize issues</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Login Section -->
+    <section id="admin-login" class="page">
+        <div class="login-container">
+            <div class="login-card">
+                <div class="login-header">
+                    <div class="logo" onclick="showPage('landing-page')" style="cursor: pointer;">
+                        <div class="logo-icon"><img src="img/logo.png" ></div>
+                        <span class="logo-text">Solvit</span>
+                    </div>
+                    <h1>Admin Login</h1>
+                    <p>Access the admin dashboard</p>
+                </div>
+
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Enter username">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter password">
+                    </div>
+
+                    <div id="login-error" class="alert alert-error" style="display: none;"></div>
+
+                    <button type="submit" class="btn-primary btn-large btn-full">Sign In</button>
+                </form>
+
+                <!-- <div class="info-box">
+                    <p><strong>Demo Credentials:</strong></p>
+                    <p>Username: <code>admin</code></p>
+                    <p>Password: <code>admin123</code></p>
+                </div> -->
+
+                <div class="login-footer">
+                    <a href="#" onclick="showPage('landing-page')">← Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Dashboard Section -->
+    <section id="admin-dashboard" class="page">
+        <header class="header">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <div class="logo-icon">📊</div>
+                        <span class="logo-text">Solvit</span>
+                        <span class="badge-admin">Admin</span>
+                    </div>
+                    <nav>
+                        <a href="#" onclick="showPage('report-page')" class="nav-link">Public View</a>
+                        <a href="#" onclick="logout()" class="nav-link">🚪 Logout</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>Admin Dashboard</h1>
+                <p>Monitor and manage community issue reports</p>
+            </div>
+
+            <!-- Key Metrics -->
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">📊</div>
+                    <div class="metric-label">Total Reports</div>
+                    <div class="metric-value" id="admin-total-reports">0</div>
+                    <div class="metric-sublabel">All time</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">📈</div>
+                    <div class="metric-label">Top Category</div>
+                    <div class="metric-value" id="admin-top-category">-</div>
+                    <div class="metric-sublabel" id="admin-top-count">0 reports</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">🗂️</div>
+                    <div class="metric-label">Categories</div>
+                    <div class="metric-value">6</div>
+                    <div class="metric-sublabel">Active categories</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">📅</div>
+                    <div class="metric-label">Latest Report</div>
+                    <div class="metric-value" id="admin-latest-date">-</div>
+                    <div class="metric-sublabel" id="admin-latest-time">No reports</div>
+                </div>
+            </div>
+
+            <!-- Charts -->
+            <div class="charts-grid">
+                <div class="card">
+                    <h2>Category Distribution</h2>
+                    <canvas id="admin-bar-chart"></canvas>
+                </div>
+                <div class="card">
+                    <h2>Category Breakdown</h2>
+                    <canvas id="admin-pie-chart"></canvas>
+                </div>
+            </div>
+
+            <!-- Category Details -->
+            <div class="card">
+                <div class="card-header-with-action">
+                    <h2>Category Details</h2>
+                    <button onclick="confirmReset()" class="btn-danger">🔄 Reset All Data</button>
+                </div>
+                <div class="category-details-grid" id="category-details">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Recent Reports -->
+            <div class="card">
+                <h2>Recent Reports</h2>
+                <div id="recent-reports">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reset Confirmation Modal -->
+    <div id="reset-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-icon-warning">⚠️</div>
+                <h3>Confirm Reset</h3>
+            </div>
+            <p>Are you sure you want to reset all data? This will delete all reports and reset category counts to zero. This action cannot be undone.</p>
+            <div class="modal-actions">
+                <button onclick="closeResetModal()" class="btn-secondary">Cancel</button>
+                <button onclick="resetAllData()" class="btn-danger">Reset All Data</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    
+    <!-- Main Application Script -->
+    <script src="app.js"></script>
+</body>
+</html>
